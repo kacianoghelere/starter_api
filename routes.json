@@ -1,0 +1,38 @@
+{
+  "name": "",
+  "controller": "HomeController",
+  "groups": [
+    { 
+      "name": "home",
+      "controller": "HomeController",
+      "groups": [],
+      "routes": [
+        { "callback": "index", "method": "GET", "path": "" },
+        { "callback": "hello", "method": "GET", "path": "{name}" }
+      ]
+    },
+    {
+      "name": "test",
+      "controller": "TestController",
+      "groups": [],
+      "routes": [
+        { "callback": "index", "method": "GET", "path": "" }
+      ]
+    },
+    {
+      "name": "user",
+      "controller": "UserController",
+      "groups": [],
+      "routes": [
+        { "callback": "index", "method": "GET", "path": "" },
+        { "callback": "find", "method": "GET", "path": "{id}" },
+        { "callback": "create", "method": "POST", "path": "" },
+        { "callback": "update", "method": "PUT", "path": "{id}" },
+        { "callback": "destroy", "method": "DELETE", "path": "{id}" }
+      ]
+    }
+  ],
+  "routes": [
+    { "callback": "index", "method": "GET", "path": "" }
+  ]
+}
