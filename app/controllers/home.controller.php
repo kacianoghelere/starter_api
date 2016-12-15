@@ -8,8 +8,7 @@ class HomeController extends BaseController {
     }
 
     function hello($request, $response, $args) {
-        $file = file_get_contents('routes.json');
-        $data = json_decode($file);
+        $data = array("message" => "Hello, {$args['name']}");
         return $response->withJson($data);
     }
 }

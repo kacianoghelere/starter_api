@@ -12,4 +12,7 @@ $app = new Slim\App();
 $router = new RouteConfig($app);
 $router->load('routes.json');
 
+
+$connection = Connection::getInstance();
+
 $app->run();
