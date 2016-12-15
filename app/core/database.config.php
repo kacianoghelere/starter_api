@@ -8,7 +8,7 @@ class Database {
     private static $conf = array(
         'host'     => '127.0.0.1',
         'user'     => 'root',
-        'passwd'   => 'd0v4hk11n',
+        'passwd'   => '',
         'port'     => '3306',
         'database' => 'teste',
         'charset'  => 'utf8'
