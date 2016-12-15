@@ -9,6 +9,7 @@ require_once('app/core/route.config.php');
 
 $app = new Slim\App();
 
-$router = new RouteConfig($app, 'routes.json');
+$router = new RouteConfig($app);
+$router->load('routes.json');
 
 $app->run();
